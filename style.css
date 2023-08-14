@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(196, 232, 232);
+}
+
+#logo {
+    background-color: white;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid rgb(81, 80, 80);
+    padding: 4px;
+    border-radius: 100px;
+    box-shadow: 2px 2px 2px 1px rgb(0, 0, 0);
+    display: inline-block;
+}
+
+nav {
+    background: rgb(18, 164, 64);
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav h2 {
+    color: white;
+    margin-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 3px 3px 7px black;
+}
+
+.chat {
+    width: 70vw;
+    margin: 10px auto;
+    background-color: aquamarine;
+    height: 70vh;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px;
+    overflow-y: auto;
+}
+
+.message {
+    font-size: large;
+    background-color: white;
+    border: 1px solid black;
+    padding: 8px 10px;
+    border-radius: 10px;
+    margin: 10px 0;
+    box-shadow: 2px 2px 8px;
+    width: fit-content;
+}
+
+.message span {
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.right {
+    float: right;
+    clear: both;
+}
+
+.left {
+    float: left;
+    clear: both;
+}
+
+.middle 
+{
+    margin: 0 auto;
+    clear: both;
+}
+
+.send {
+    box-shadow: 2px 2px 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(18, 95, 69);
+    padding: 5px;
+    width: 70vw;
+    margin: auto;
+    clear: both;
+}
+
+.send form {
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+
+.send form input {
+    font-size: large;
+    padding: 5px;
+    margin: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 255, 0);
+}
+
+.send form .button button {
+    border-radius: 1000px;
+    border: 1px solid rgb(0, 255, 0);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.send form .button button:hover {
+    background-color: rgb(7, 250, 7);
+}
+
+
+.send form .button button svg {
+    /* border-radius: 100px; */
+    margin: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+@media screen and (max-width: 700px) {
+    .chat 
+    {
+        width: 95vw;
+    }
+    .send 
+    {
+        width: 95vw;
+    }
+    .send form {
+        grid-template-columns: 85% 15%;
+    }
+}
